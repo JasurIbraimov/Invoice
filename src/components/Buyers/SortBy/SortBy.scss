@@ -1,0 +1,21 @@
+.sort__btn {
+	padding: 15px 10px;
+	margin-right: 10px;
+	background-color: #1abc9c;
+	border: none;
+	color: #ffffff;
+	border-radius: 5px;
+	cursor: pointer;
+	outline: none;
+	font-size: 17px;
+	transition: 0.25s all;
+	&:hover {
+		box-shadow: 1px 1px 10px #1abc9c;
+	}
+	&_active {
+		background-color: salmon;
+		&:hover {
+			box-shadow: 1px 1px 10px salmon;
+		}
+	}
+}

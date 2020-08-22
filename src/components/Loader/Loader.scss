@@ -1,0 +1,11 @@
+.loader {
+	background-color: transparent;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	&__icon {
+		color: #ffffff;
+		font-size: 30px;
+	}
+}

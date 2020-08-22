@@ -1,0 +1,21 @@
+.error {
+	background-color: #0000003f;
+	display: flex;
+	justify-content: center;
+	min-width: 400px;
+	min-height: 200px;
+	padding: 20px;
+	box-shadow: 1px 1px 10px #00000030;
+	background-color: #ffffff;
+	flex-direction: column;
+	border-radius: 5px;
+	align-items: center;
+	&__icon {
+		font-size: 50px;
+		color: #e74c3c;
+		margin-bottom: 20px;
+	}
+	&__descr {
+		font-size: 22px;
+	}
+}

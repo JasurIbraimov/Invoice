@@ -1,0 +1,15 @@
+.nav-link__item {
+	text-align: center;
+	cursor: pointer;
+	display: block;
+	margin-bottom: 20px;
+	padding: 10px 0;
+	width: 100%;
+	background-color: #ffffff;
+	text-decoration: none;
+	color: #000000;
+	&_active {
+		background-color: #1abc9c;
+		color: #ffffff;
+	}
+}

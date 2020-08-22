@@ -1,0 +1,23 @@
+.terminal {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+	&__name,
+	&__descr {
+		padding: 20px;
+		margin-left: 20px;
+		width: 50%;
+		border-radius: 5px;
+		background-color: #ecf0f1;
+	}
+	&__del {
+		font-size: 24px;
+		cursor: pointer;
+		color: #e74c3c;
+		transition: 0.25s all;
+		&:hover {
+			color: #ff0000;
+		}
+	}
+}

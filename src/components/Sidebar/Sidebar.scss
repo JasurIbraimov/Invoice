@@ -1,0 +1,66 @@
+.sidebar {
+	min-height: 100vh;
+	position: relative;
+	background-color: #34495e;
+	padding: 0 10px;
+	display: flex;
+	width: 300px;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	border: 2px solid #ffffff;
+	box-shadow: 1px 1px 10px #00000085;
+	transition: 0.25s all;
+	&_hidden {
+		background-color: transparent;
+		border: 2px solid #34495e;
+		box-shadow: none;
+		width: 36px;
+		.sidebar {
+			&__user,
+			&__nav,
+			&__footer {
+				opacity: 0;
+			}
+			&__toggle-btn {
+				color: #34495e;
+				right: -8px;
+			}
+		}
+	}
+	&__toggle-btn {
+		position: absolute;
+		top: 0px;
+		color: #ffffff;
+		cursor: pointer;
+		font-size: 36px;
+		right: -15px;
+		transition: 0.5s transform;
+		transform: translate(-50%, 10%);
+	}
+	&__user {
+		margin-top: 40px;
+		text-align: center;
+		&-avatar {
+			max-width: 100px;
+			max-height: 100px;
+			margin-bottom: 10px;
+			border-radius: 100%;
+			object-fit: contain;
+		}
+		&-login {
+			color: #ffffff;
+			font-size: 22px;
+		}
+	}
+	&__nav {
+		width: 100%;
+	}
+	&__footer {
+		margin-bottom: 40px;
+		&-info {
+			color: #ffffff;
+			font-size: 14px;
+		}
+	}
+}

@@ -1,0 +1,78 @@
+.auth {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	&__form {
+		display: flex;
+		flex-direction: column;
+		padding: 40px;
+		border-radius: 5px;
+		box-shadow: 1px 1px 10px #00000030;
+		background-color: #ffffff;
+		&-item {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+		}
+	}
+	&__title {
+		text-align: center;
+		margin-bottom: 30px;
+		color: #2c3e50;
+		font-size: 30px;
+	}
+	&__label {
+		margin-bottom: 5px;
+		font-size: 16px;
+		color: #00000070;
+	}
+	&__input {
+		padding: 15px 30px 15px 20px;
+		width: 300px;
+		font-size: 16px;
+		border-radius: 5px;
+		border: 1px solid #00000030;
+		margin-bottom: 20px;
+		&::placeholder {
+			font-size: 16px;
+			color: #00000050;
+		}
+		&_required {
+			border: 1px solid #e74c3c;
+		}
+	}
+	&__btn {
+		border: none;
+		text-transform: uppercase;
+		padding: 10px;
+		border-radius: 5px;
+		width: 200px;
+		height: 50px;
+		font-size: 18px;
+		margin: 0 auto;
+		margin-top: 20px;
+		background-color: #3498db;
+		color: #ffffff;
+	}
+	&__icon {
+		cursor: pointer;
+		position: absolute;
+		top: 50%;
+		right: 0;
+		color: #3498db;
+		transform: translate(-50%, -35%);
+		&_slash {
+			color: #00000050;
+		}
+	}
+	&__required {
+		position: absolute;
+		bottom: 0;
+		font-size: 16px;
+		color: #e74c3c;
+	}
+	&__error {
+		margin-left: 40px;
+	}
+}
