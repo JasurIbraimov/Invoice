@@ -38,7 +38,7 @@ const Sidebar = () => {
 				)}
 			</div>
 			<nav className='sidebar__nav'>
-				<NavLink label='Терминалы' to='/terminals' />
+				<NavLink label='Терминалы' to='/' activeOnlyWhenExact />
 				<NavLink label='Покупатели' to='/buyers' activeOnlyWhenExact />
 			</nav>
 			<footer className='sidebar__footer'>

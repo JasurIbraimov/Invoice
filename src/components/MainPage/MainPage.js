@@ -11,14 +11,14 @@ const MainPage = () => {
 		<div className='mainpage'>
 			<Sidebar />
 			<Switch>
-				<Route path='/terminals'>
-					<Terminals />
-				</Route>
 				<Route exact path='/buyers'>
 					<Buyers />
 				</Route>
 				<Route path='/buyers/:buyerId'>
 					<BuyerPage />
+				</Route>
+				<Route exact path='/'>
+					<Terminals />
 				</Route>
 				<Route path='*'>
 					<NoMatchPage />
